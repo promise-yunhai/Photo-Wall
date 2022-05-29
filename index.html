@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" ondragstart="return false">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="Keywords" content="">
+      <meta name="Description" content="">
+      <title>photos</title>
+      <!-- 如果我有天醒来 -->
+      <!-- 层叠样式表 -->
+      <style type="text/css">
+            /* 去掉默认效果 */
+            * {
+                  margin: 0;
+                  padding: 0;
+            }
+
+            body {
+                  background-image: url(img/background.jpg);
+			background-size: 100% auto;
+                  overflow: hidden;
+                  /* 取消选中 */
+                  user-select: none;
+
+            }
+
+            @keyframes rotate {
+                  100% {
+                        transform: rotateY(360deg);
+                  }
+            }
+
+            .perspective {
+                  /*子元素透视 场景深度*/
+                  perspective: 600px;
+            }
+
+            .wrap {
+                  /* 3d */
+                  width: 135px;
+                  height: 240px;
+                  margin: 100px auto;
+                  position: relative;
+                  /* border: 1px solid red; */
+                  transform: rotateX(-20deg) rotateY(0deg);
+                  transform-style: preserve-3d;
+
+            }
+
+            .wrap img {
+                  display: block;
+                  /* 绝对定位 */
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  transform: rotateY(0deg) translateZ(0px);
+                  background: transparent;
+                  box-shadow: 0 0 4px #fff;
+                  border-radius: 5px;
+
+                  /* webkit */
+            }
+
+            /* 照片底座 */
+            .wrap p {
+                  width: 1200px;
+                  height: 1200px;
+                  background: -webkit-radial-gradient(center center, 600px 600px, rgba(122, 122, 122, .5), rgba(0, 0, 0, 0));
+                  position: absolute;
+                  border-radius: 50%;
+                  left: 50%;
+                  top: 100%;
+                  margin-left: -600px;
+                  margin-top: -600px;
+                  /* 沿着x轴按倒 */
+                  transform: rotateX(90deg);
+
+            }
+      </style>
+</head>
+
+<body>
+      <!-- 盒子容器 -->
+      <div class="perspective">
+            <div class="wrap" id="imgwrap">
+                  <!-- 引入图片值页面 -->
+                  <img class="f1" src="img/12.jpg" />
+                  <img class="f1" src="img/13.jpg" />
+                  <img class="f1" src="img/14.jpg" />
+                  <img class="f1" src="img/15.jpg" />
+                  <img class="f1" src="img/16.jpg" />
+                  <img class="f1" src="img/1.jpg" />
+                  <img class="f1" src="img/2.jpg" />
+                  <img class="f1" src="img/3.jpg" />
+                  <img class="f1" src="img/4.jpg" />
+                  <img class="f1" src="img/5.jpg" />
+                  <img class="f1" src="img/6.jpg" />
+                  <img class="f1" src="img/7.jpg" />
+                  <img class="f1" src="img/5.jpg" />
+                  <img class="f1" src="img/6.jpg" />
+                  <img class="f1" src="img/7.jpg" />
+                  <img class="f1" src="img/8.jpg" />
+                  <img class="f1" src="img/9.jpg" />
+                  <img class="f1" src="img/10.jpg" />
+                  <img class="f1" src="img/11.jpg" />
+
+                  <img class="f1" src="img/17.jpg" />
+                  <img class="f1" src="img/18.jpg" />
+                  <img class="f1" src="img/19.jpg" />
+                  <img class="f1" src="img/20.jpg" />
+                  <img class="f1" src="img/21.jpg" />
+                  <img class="f1" src="img/22.jpg" />
+                  <img class="f1" src="img/23.jpg" />
+                  <img class="f1" src="img/24.jpg" />
+                  <img class="f1" src="img/25.jpg" />
+                  <img class="f1" src="img/26.jpg" />
+                  <img class="f1" src="img/27.jpg" />
+                  <img class="f1" src="img/28.jpg" />
+                  <img class="f1" src="img/29.jpg" />
+                  <img class="f1" src="img/30.jpg" />
+
+                  <!-- 引入图片值页面 -->
+                  <img class="f2" src="img/1.jpg" />
+                  <img class="f2" src="img/2.jpg" />
+                  <img class="f2" src="img/3.jpg" />
+                  <img class="f2" src="img/4.jpg" />
+                  <img class="f2" src="img/5.jpg" />
+
+                  <img class="f2" src="img/9.jpg" />
+                  <img class="f2" src="img/10.jpg" />
+                  <img class="f2" src="img/11.jpg" />
+                  <img class="f2" src="img/12.jpg" />
+                  <img class="f2" src="img/25.jpg" />
+                  <img class="f2" src="img/26.jpg" />
+                  <img class="f2" src="img/27.jpg" />
+                  <img class="f2" src="img/28.jpg" />
+                  <img class="f2" src="img/29.jpg" />
+                  <img class="f2" src="img/30.jpg" />
+                  <img class="f2" src="img/13.jpg" />
+                  <img class="f2" src="img/14.jpg" />
+                  <img class="f2" src="img/15.jpg" />
+                  <img class="f2" src="img/16.jpg" />
+                  <img class="f2" src="img/17.jpg" />
+                  <img class="f2" src="img/18.jpg" />
+                  <img class="f2" src="img/19.jpg" />
+                  <img class="f2" src="img/20.jpg" />
+                  <img class="f2" src="img/21.jpg" />
+                  <img class="f2" src="img/22.jpg" />
+                  <img class="f2" src="img/23.jpg" />
+                  <img class="f2" src="img/24.jpg" />
+                  <img class="f2" src="img/6.jpg" />
+                  <img class="f2" src="img/7.jpg" />
+                  <img class="f2" src="img/5.jpg" />
+                  <img class="f2" src="img/6.jpg" />
+                  <img class="f2" src="img/7.jpg" />
+                  <img class="f2" src="img/8.jpg" />
+                  <!-- 引入图片值页面 -->
+
+                  <img class="f3" src="img/1.jpg" />
+                  <img class="f3" src="img/2.jpg" />
+                  <img class="f3" src="img/11.jpg" />
+                  <img class="f3" src="img/12.jpg" />
+                  <img class="f3" src="img/25.jpg" />
+                  <img class="f3" src="img/26.jpg" />
+                  <img class="f3" src="img/27.jpg" />
+                  <img class="f3" src="img/3.jpg" />
+                  <img class="f3" src="img/4.jpg" />
+                  <img class="f3" src="img/5.jpg" />
+
+
+                  <img class="f3" src="img/16.jpg" />
+                  <img class="f3" src="img/17.jpg" />
+                  <img class="f3" src="img/18.jpg" />
+                  <img class="f3" src="img/10.jpg" />
+
+                  <img class="f3" src="img/28.jpg" />
+                  <img class="f3" src="img/29.jpg" />
+                  <img class="f3" src="img/30.jpg" />
+                  <img class="f3" src="img/13.jpg" />
+
+                  <img class="f3" src="img/19.jpg" />
+                  <img class="f3" src="img/20.jpg" />
+                  <img class="f3" src="img/21.jpg" />
+                  <img class="f3" src="img/22.jpg" />
+                  <img class="f3" src="img/23.jpg" />
+                  <img class="f3" src="img/24.jpg" />
+                  <img class="f3" src="img/9.jpg" />
+                  <img class="f3" src="img/14.jpg" />
+                  <img class="f3" src="img/15.jpg" />
+                  <img class="f3" src="img/6.jpg" />
+                  <img class="f3" src="img/7.jpg" />
+                  <img class="f3" src="img/5.jpg" />
+                  <img class="f3" src="img/6.jpg" />
+                  <img class="f3" src="img/7.jpg" />
+                  <img class="f3" src="img/8.jpg" />
+
+
+                  <p></p>
+            </div>
+      </div>
+      <audio controls = "controls" autoplay="autoplay" style="width:20px;width:200px;position:absolute;top:10px;right:10px;">
+            <source src="html2.mp3" > 
+            
+      </audio>
+      
+      <!--  src="JS/photo.js" -->
+      <script type="text/javascript">
+            var oImg = document.getElementsByClassName('f1')
+            var oImg2 = document.getElementsByClassName('f2')
+            var oImg3 = document.getElementsByClassName('f3')
+            var len = oImg.length;
+            console.log(len)
+            var deg = 360 / len;
+
+            var oWrap = document.getElementById("imgwrap");
+            // var oWrap=document.querySelector('.wrap');
+
+            //页面加载完毕在执行的代码
+            window.onload = function () {
+                  Array.prototype.forEach.call(oImg, function (ele, index, self) {
+                        // 旋转并沿Z轴平移
+                        ele.style.transform = "rotateY(" + deg * index + "deg) translateZ(645.75px)";
+                        //过渡时间1s
+                        ele.style.transition = "1s " + (len - index) * 0.1 + "s";
+
+                  });
+                  Array.prototype.forEach.call(oImg2, function (ele, index, self) {
+                        // 旋转并沿Z轴平移
+                        ele.style.transform = "rotateY(" + deg * index + "deg) translateZ(645.75px) translateY(240px)";
+                        //过渡时间1s
+                        ele.style.transition = "1s " + (len - index) * 0.1 + "s";
+
+                  });
+                  Array.prototype.forEach.call(oImg3, function (ele, index, self) {
+                        // 旋转并沿Z轴平移
+                        ele.style.transform = "rotateY(" + deg * index + "deg) translateZ(645.75px) translateY(480px)";
+                        //过渡时间1s
+                        ele.style.transition = "1s " + (len - index) * 0.1 + "s";
+
+                  });
+                  // Array.prototype.forEach.call(oImg, function (ele, index, self) {
+                  //       // 旋转并沿Z轴平移
+                  //       ele.style.transform = "rotateY(" + deg * index + "deg) translateZ(350px)";
+                  //       //过渡时间1s
+                  //       ele.style.transition = "1s " + (len - index) * 0.1 + "s";
+
+                  // });
+
+            }
+            //翻动3D相册
+            var newX, newY, lastX, lastY, minusX, minusY, rotX = -20, rotY = 0;
+
+            document.onmousedown = function (e) {
+                  // 点击设置初值
+                  lastX = e.clientX;
+                  lastY = e.clientY;
+
+                  this.onmousemove = function (e) {
+                        newX = e.clientX;
+                        newY = e.clientY;
+                        minusX = newX - lastX;
+                        minusY = newY - lastY;
+
+                        rotX -= minusY * 0.2;
+                        rotY += minusX * 0.1;
+                        oWrap.style.transform = "rotateX(" + rotX + "deg) rotateY(" + rotY + "deg)";
+                        lastX = newX;
+                        lastY = newY;
+
+                  }
+                  this.onmouseup = function (e) {
+                        //鼠标松开
+                        this.onmousemove = null;//清除鼠标移动
+                  }
+            }
+
+      </script>
+      <script>
+
+            !function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);</script>
+</body>
+
+</html>
